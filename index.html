@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <!-- &----------Fav Icon ----------- -->
+    <link rel="shortcut icon" href="./imgs/free-cinema-icon-849-thumb.png" type="image/x-icon">
+    <!-- &----------FontAwesome Css ----------- -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- &----------Bootstrap Css ----------- -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- &----------AOS Animation CSS ----------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- &----------Main Css ----------- -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
+    <!-- &----------NAVBAR  --------- -->
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/free-cinema-icon-849-thumb.png" alt="movies logo" class="movieLogo">
+                <span class="pt-2">Movies</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars mainColor fs-3"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#movies">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comming">Comming Soon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#newsletter">Newsletter</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <button class="btn btn-main">Sign In</button>
+        </div>
+    </nav>
+    <!-- &----------Home----------- -->
+    <header class="home d-flex justify-content-center align-items-center min-vh-100" id="home">
+        <div class="container">
+            <p class="text-uppercase fw-semibold" data-aos="fade-right" data-aos-duration="1000">Marvel Universe</p>
+            <h1 class="text-white fw-bolder display-3 my-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Spider-Man <br>
+                Far From Home</h1>
+            <button class="btn btn-main" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">Book Now </button>
+        </div>
+    </header>
+    <!-- &----------Movies----------- -->
+    <section class="movies " id="movies">
+        <div class="container py-5">
+            <h2 class="h4 text-white pb-2 mb-5 text-capitalize" data-aos="fade-up">
+                Opening this Week
+            </h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="item">
+                        <img src="./imgs/m1.jpg" alt="Venom">
+                        <h5 class="mainColor my-2">Venom</h5>
+                        <h6 class="text-white">120min | Action</h6>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="item">
+                        <img src="./imgs/m2.jpg" alt="Venom">
+                        <h5 class="mainColor my-2">Dunkerk</h5>
+                        <h6 class="text-white">105min | Adventure
+                        </h6>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="item">
+                        <img src="./imgs/m3.jpg" alt="Venom">
+                        <h5 class="mainColor my-2">Batman & Superman</h5>
+                        <h6 class="text-white">100min | Thriller</h6>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <div class="item">
+                        <img src="./imgs/m4.jpg" alt="Venom">
+                        <h5 class="mainColor my-2">John Wick
+                        </h5>
+                        <h6 class="text-white">120min | Adventure</h6>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="500">
+                    <div class="item">
+                        <img src="./imgs/m5.jpg" alt="Venom">
+                        <h5 class="mainColor my-2"> Aquaman
+                        </h5>
+                        <h6 class="text-white">130min | Action
+                        </h6>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="item">
+                        <img src="./imgs/m6.jpg" alt="Venom">
+                        <h5 class="mainColor my-2">Dunkerk</h5>
+                        <h6 class="text-white">105min | Adventure
+                        </h6>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="item">
+                        <img src="./imgs/m7.jpg" alt="Venom">
+                        <h5 class="mainColor my-2">Thor</h5>
+                        <h6 class="text-white">130min | Action
+                        </h6>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="item">
+                        <img src="./imgs/m8.png" alt="Venom">
+                        <h5 class="mainColor my-2">Bumblebee</h5>
+                        <h6 class="text-white">100min | Thriller
+                        </h6>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <div class="item">
+                        <img src="./imgs/m9.jpg" alt="Venom">
+                        <h5 class="mainColor my-2">Mortal Engines</h5>
+                        <h6 class="text-white">100min | Action
+                        </h6>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="500">
+                    <div class="item">
+                        <img src="./imgs/m10.jpg" alt="UnderWorld Blood Wars">
+                        <h5 class="mainColor my-2">UnderWorld Blood Wars</h5>
+                        <h6 class="text-white">100min | Action
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- &----------Comming----------- -->
+    <section class="comming" id="comming">
+        <div class="container py-5">
+            <h2 class="h4 text-white pb-2 mb-5 text-capitalize" data-aos="fade-up">
+                Comming soon
+            </h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+                <div class="item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="./imgs/coming1.jpg" alt="Joney English">
+                    <h5 class="mainColor my-2">Joney English</h5>
+                    <h6 class="text-white">80min | Comedy
+
+                    </h6>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="./imgs/coming2.jpg" alt="WarCrafet">
+                    <h5 class="mainColor my-2">WarCrafet</h5>
+                    <h6 class="text-white">120min | Action
+
+
+                    </h6>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./imgs/coming3.jpg" alt="Rampage">
+                    <h5 class="mainColor my-2">Rampage</h5>
+                    <h6 class="text-white">120min | Action
+                    </h6>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="./imgs/coming4.jpg" alt="Airon Lady">
+                    <h5 class="mainColor my-2">Airon Lady</h5>
+                    <h6 class="text-white">120min | Comedy
+                    </h6>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="500">
+                    <img src="./imgs/coming5.jpg" alt="Justice League">
+                    <h5 class="mainColor my-2">Justice League</h5>
+                    <h6 class="text-white">120min | Adventure
+                    </h6>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="./imgs/coming6.jpeg" alt="Doctor Strange">
+                    <h5 class="mainColor my-2">Doctor Strange</h5>
+                    <h6 class="text-white">120min | Adventure
+                    </h6>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="./imgs/coming7.jpg" alt="Captain Marvel">
+                    <h5 class="mainColor my-2">Captain Marvel</h5>
+                    <h6 class="text-white">120min | Adventure
+                    </h6>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./imgs/coming8.jpg" alt="Black Widow">
+                    <h5 class="mainColor my-2">Black Widow</h5>
+                    <h6 class="text-white">90min | Action
+                    </h6>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="./imgs/coming9.jpg" alt="Ant Man">
+                    <h5 class="mainColor my-2">Ant Man</h5>
+                    <h6 class="text-white">110min | Adventure
+                    </h6>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="500">
+                    <img src="./imgs/coming10.jpg" alt="Guardiance Of The Galaxy">
+                    <h5 class="mainColor my-2">Guardiance Of The Galaxy</h5>
+                    <h6 class="text-white">120min | Adventure
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- &----------Newsletter-------- -->
+    <section class="newsletter text-white my-5" id="newsletter">
+        <div class="mainContent  m-auto d-flex justify-content-center align-items-center gap-4 flex-column"
+        data-aos="zoom-in">
+            <h2>Subscribe To Get
+                Newsletter</h2>
+            <div class="inputmail  w-50 ">
+                <input type="email" class="form-control " name="email" id="email" placeholder="Enter Email... ">
+                <button class="btn btn-main">Subscribe</button>
+            </div>
+        </div>
+        <div class="links  d-flex justify-content-between align-items-center mt-5" data-aos="fade-up">
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/free-cinema-icon-849-thumb.png" alt="movies logo" class="movieLogo">
+                <span class="pt-2">Movies</span></a>
+            <ul class="d-flex justify-content-center align-items-center gap-4 list-unstyled">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.x.com/" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- &----------Footer-------- -->
+    <footer class="text-center text-white" >
+        <p>© <span class="mainColor">Web Masters</span> All Right Reserved.</p>
+        <p>Made with  <i class="fa-solid fa-heart fa-beat mainColor"></i>  By Asmaa Abdo @2025</p>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- &----------AOS Animation JS ----------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false
+        });
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 35) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+/* *-----------Google Fonts ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* *-----------Global Styles ---------- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+}
+section {
+  width: 70%;
+  margin: auto;
+}
+:root {
+  --main-color: #ff2c1f;
+}
+.mainColor {
+  color: var(--main-color);
+}
+::selection {
+  background-color: var(--main-color);
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+.bg-hover-main {
+  background-color: rgb(250, 18, 22);
+}
+.btn-main {
+  color: #fff;
+  --bs-btn-bg: var(--main-color);
+  --bs-btn-border-color: var(--main-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(250, 18, 22);
+  --bs-btn-hover-border-color: rgb(250, 18, 22);
+  --bs-btn-active-bg: rgb(250, 18, 22);
+  --bs-btn-active-border-color: var(--main-color);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgb(250, 18, 22);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: rgb(250, 18, 22);
+  --bs-btn-disabled-border-color: rgb(250, 18, 22);
+}
+
+.btn {
+  --bs-btn-padding-y: 0.3125rem;
+  --bs-btn-padding-x: 1.0625rem;
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-box-shadow: inset 0 1px 0 var(--main-color),
+    0 1px 1px rgba(0, 0, 0, 0.075);
+  color: #fff;
+}
+html {
+  scroll-padding-top: 56px;
+}
+
+/* ^------------NAVBAR---------- */
+.movieLogo {
+  width: 30px;
+}
+.navbar-brand {
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #fff;
+}
+.nav-link {
+  margin-inline-end: 30px;
+  font-size: 1.125rem;
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--main-color);
+  position: relative;
+}
+.nav-link:before {
+  content: "";
+  background-color: var(--main-color);
+  width: 0;
+  position: absolute;
+  left: 3px;
+  top: 80%;
+  height: 3px;
+  transition: 0.3s width;
+}
+.nav-link:hover {
+  color: var(--main-color);
+}
+.nav-link:hover:before {
+  width: 90%;
+}
+.navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+.navbar-nav .nav-link.active::before {
+  width: 90%;
+}
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.9375rem;
+}
+.navbar.scrolled {
+  background-color: #000 !important;
+  transition: background-color 0.3s ease;
+}
+/* ^------------Home---------- */
+.home {
+  padding-top: 56px;
+  background-image: url("../imgs/home3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* ^------------MOVIES---------- */
+
+.item {
+  height: 315.6;
+  cursor: pointer;
+}
+.item:hover img {
+  transform: translateY(-20px);
+}
+.item img {
+  width: 100%;
+  transition: transform 0.4s;
+}
+.movies h2 {
+  border-bottom: 1px solid var(--main-color);
+}
+/* ^------------COMMING---------- */
+.comming h2 {
+  border-bottom: 1px solid var(--main-color);
+}
+/* ^------------Newsletter---------- */
+.form-control {
+  padding: 10px;
+}
+.form-control:focus {
+  border-color: var(--main-color);
+  outline: 0;
+  box-shadow: none;
+}
+.newsletter .inputmail {
+  position: relative;
+}
+.newsletter .inputmail button {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+.newsletter ul li {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s background-color;
+}
+.newsletter ul li:hover {
+  background-color: var(--main-color);
+}
+.newsletter ul li:hover a {
+  color: #fff;
+}
+.newsletter ul li a {
+  font-size: 21px;
+  color: var(--main-color);
+  transition: 0.3s color;
+}
+/* !------------MEDIA QUERY---------- */
+
+@media (max-width: 991.98px) {
+  section {
+    width: 85% !important;
+  }
+  .newsletter .inputmail {
+    width: 75%;
+  }
+}
+@media (max-width: 575.98px) {
+  section {
+    width: 95% !important;
+  }
+  .newsletter .inputmail {
+    width: 125px !important;
+  }
+}
