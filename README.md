@@ -14,6 +14,7 @@ This is a responsive and modern landing page about movies
 
 - HTML5
 - CSS3
+- Bootstrap
 - Font Awesome
 - AOS
   
